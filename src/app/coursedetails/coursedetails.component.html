@@ -1,0 +1,60 @@
+        <body class="body">
+               <br>
+               <br>
+               <h1 class="coursename" style="text-align: center">  {{courseName}}</h1>
+               <br>
+           
+               <h3 class="coursename">Introduction  </h3>
+               <p> {{introduction}}</p>
+               <br>
+           
+               <h3 class="coursename"> What is {{courseName}} ?  </h3>
+               <p> {{courseDescription}}</p>
+           
+               <br>
+           
+               <div class="row">
+                   <div class="col-sm-8">
+                       <h3 class="coursename "> You can write comment for this course   </h3>
+                       <br>
+                       <div class="form">
+           
+                           <form #commentForm="ngForm" (ngSubmit)="commentcourse(commentForm)" class="form form-login ">
+                               <div class="row">
+                                   <div class="form-field ">
+                                       <label class="user" for="comment-course"><span class="hidden">Comment</span></label>
+                                       <input name="comment" style="width: 750px" id="comment-course" type="text" class="form-input" placeholder="Add a comment..." required ngModel>
+                                   </div>
+           
+                                   <div class="submit">
+                                       <input type="submit" value="Submit">
+                                   </div>
+                               </div>
+                           </form>
+                       </div>
+                       <br>
+                       <h3 class="coursename "> All comments  </h3>
+                       <div class="scrollable">
+                           <div *ngFor="let course of commented.slice().reverse() ; let i = index">
+                               <div class=" row comment">
+                                   <div class="username "> <img src="../../assets/img/dp1.png" class="image"> </div>
+                                   <div>
+                                       <h4 class="username col-sm-1">{{course.username}}</h4> </div>
+           
+                                   <div> {{course.comment}} </div>
+                               </div>
+           
+                           </div>
+                       </div>
+                   </div>
+           
+                   <div class=" col-sm-4">
+           
+                       <h3 class="coursename "> You can rate this course:             <ngb-rating class="rating"    [(rate)]="postRating"  (click)=rating() max="5"></ngb-rating> </h3>
+                       <br>
+                       <h3 class="coursename ">  Average of this course : <ngb-rating class="rating" [(rate)]="averageRating" [starTemplate]="t" [readonly]="true" max="5"  ></ngb-rating> </h3>
+           
+                   </div>
+           
+               </div>
+           </body>

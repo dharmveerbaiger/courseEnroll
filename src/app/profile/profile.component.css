@@ -1,0 +1,26 @@
+.image{
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  }
+  .courseName{
+    font-size: 40px;
+    font-family: "lato";
+    color: rgb(86, 69, 238);
+    font-weight: bold;    
+  }
+  .course-container{
+    text-align: center; 
+  }
+  .username{
+    color: rgb(86, 69, 238);
+    text-align: center
+}
+.totalcourses{
+  color: rgb(86, 69, 238);
+  text-align:center
+}
+.user{
+  padding-left: 10%;
+  padding-right: 10%
+}

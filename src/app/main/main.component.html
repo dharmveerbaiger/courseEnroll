@@ -1,0 +1,23 @@
+<main>
+  <div class ="row">
+        <ul class="nav nav-pills nav-justified ">
+         
+            <li  class="col-sm-2">
+               <a  routerLink="" > <img  style="padding-left: 0%; width: 25%" src="../../../../assets/img/logo.png"></a>
+              </li>
+              <li  class="col-sm-1">
+                </li>
+            <li routerLinkActive="active" class="col-sm-2">
+                <a   routerLink="/home"> <img style="padding-right: 7%;  width: 16%" src="../../../../assets/img/home.png"> Home</a>
+              </li>
+              <li routerLinkActive="active"  class="col-sm-2" >
+                <a routerLink="/profile"> <img style=" padding-right: 7%; width: 19%" src="../../../../assets/img/profile.png">Profile</a>
+              </li>
+              <li routerLinkActive="active" class="col-sm-2">
+                  <a routerLink="/logout" (click)="logout()" > <img style=" padding-right: 7%; width: 16%" src="../../../../assets/img/logout.jpg">Logout</a>
+              </li>
+          </ul>
+          </div>  
+</main>      
+<router-outlet>  </router-outlet>
+  

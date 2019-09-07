@@ -1,0 +1,14 @@
+.nav-justified>li {
+    display: table-cell;
+    width: 33%;
+    font-size: 30px;
+    /* background-color: rgb(86, 69, 238); */
+}
+.nav-pills>li.active>a{
+    background-color: white;
+    border-bottom: 4px solid  rgb(86, 69, 238);
+    color:  rgb(86, 69, 238); 
+}
+.nav-pills>li+li {
+    margin-left: 0px;
+}

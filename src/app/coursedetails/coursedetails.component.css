@@ -1,0 +1,107 @@
+body{
+    padding-right: 10%;
+    padding-left: 10%;
+    background-image: url(../../assets/img/background_course.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-weight: bold;
+    font-family: 'lato', sans-serif;
+    font-size: 30px;    
+}
+
+.starrating > input {display: none;} 
+
+.starrating > label:before { 
+  content: "\f005"; 
+  margin: 2px;
+  font-size: 40px;
+  font-family: FontAwesome;
+  display: inline-block; 
+  justify-content: flex-start;
+}
+.user{
+    size: 200px
+}
+.form{
+    padding-left: 2%
+}
+.submit{
+    color: blue;
+    
+}
+.justify-content-center {
+    justify-content: flex-end;
+}
+.container{
+        margin-left: 0px 
+}
+
+.starrating > label
+{
+  color: #d8d0d0;
+}
+
+.starrating > input:checked ~ label
+{ color: blue ; }
+
+.starrating > input:hover ~ label
+{ color: blue ;  } 
+
+.coursename{
+    color: blue;
+}
+.comment{
+    font-size: 26px;
+    font-family: lato;
+    padding-left: 5%;
+    margin: 1px;
+    font-weight: 500;
+    margin: 20px;
+}
+.footer{
+    height: 20%;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+.return{
+    color: blue;
+    text-align: center;
+}
+.back-button{
+    background-color: blue;
+    color: #eee;
+    font-size: 35px;
+    border-radius: 5px;
+}
+
+.btn-outline-info {
+    color: blue;
+    border-color:blue;
+}
+.scroll {
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 2%
+    }
+.scrollable {
+    height:200px;
+    width:1150px;
+    overflow:scroll;
+    overflow-x:hidden;
+    overflow-y:scroll
+  }
+  .rating{
+      color: black;
+      padding-left: 5%
+  }
+  .username{
+      font-weight: 600;
+
+  }
+.image{
+    width: 40px;
+    height: 40px;
+}

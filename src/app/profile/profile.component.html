@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body class="user" style="padding-top: 2%">
+    <div class="row " style="background-color:rgb(172, 182, 206)">
+        <br>
+        <div style="padding-left: 10%"> <img src="../../assets/img/dp1.png" class="col-sm-8">
+
+        </div>
+        <div style="padding-top: 2%" class="col-sm-4">
+            <h1 class="username "> {{user.result.name}} </h1>
+            <br>
+            <h4 style="text-align:center"> Email:  {{user.result.email}} </h4>
+        </div>
+    </div>
+    <br>
+    <h1 class="totalcourses"> Enrolled Course</h1>
+    <h3 style="text-align:center">You have enrolled this courses. </h3>
+    <br>
+    <div>
+
+        <div class="row">
+            <div #courseEl *ngFor="let course of coursesEnrolled; let i = index" [attr.data-course-id]="course.id" class="col-sm-4 course-container">
+                <div class="courseName"> {{course.courseName}}</div>
+                <br>
+                <div>
+                    <a><img class="image" src="assets/img/{{course.courseId}}.png" (click)="gotoCourseDetails(course.courseName,course.courseId)"> </a>
+                </div>
+                <br>
+                <br />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

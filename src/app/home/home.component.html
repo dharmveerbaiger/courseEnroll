@@ -1,0 +1,35 @@
+<html>
+<br>
+<br>
+<h1 class="coursename"> Courses Available</h1>
+<br>
+<h3 style="text-align:center">You can enroll any of these available course. </h3>
+<br>
+<div>
+    <div class="row">
+        <div #courseEl *ngFor="let course of allcourses; let i = index" [attr.data-course-id]="course.id" class="col-sm-4 course-container">
+            <div class="courseName"> {{course.courseName}}</div>
+            <br>
+            <div>
+                <a><img class="image" src="assets/img/{{course.id}}.png" (click)="gotoCourseDetails(course.courseName,course.id)"> </a>
+            </div>
+            <br>
+            <div *ngIf="!EnrolledCourses[course.id]; else notShow">
+                <button (click)="enrollcourse(courseEl,course.courseName,i) " (click)="gotoCourseDetails(course.courseName,course.id)" class="button-course" type="button-course"> Enroll me! </button>
+                <br>
+                <br />
+                <br>
+            </div>
+
+            <ng-template #notShow>
+                <button class="button-disabled" type="button-course" [disabled]="true"> Enrolled </button>
+                <br>
+                <br />
+                <br>
+            </ng-template>
+
+        </div>
+    </div>
+</div>
+
+</html>

@@ -1,0 +1,51 @@
+.button-course {
+    background-color: rgb(52, 71, 235); 
+    border: 13px;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin-left: 20px;
+  }
+  .button-disabled {
+    background-color: rgb(134, 134, 134); 
+    border: 13px;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin-left: 20px;
+  }
+  .button-enroll {
+    background-color: rgb(52, 71, 235); 
+    border: 13px;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right:16px;
+  }
+  .image{
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+  }
+  .course-container{
+    text-align: center; 
+  }
+  .coursename{
+    color: rgb(86, 69, 238);
+    text-align: center;
+}
+.courseName{
+  font-size: 40px;
+  font-family: "lato";
+  color: rgb(86, 69, 238);
+  font-weight: bold;    
+}
